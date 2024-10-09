@@ -1,0 +1,576 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+/* ============= CSS Reset Injection =================== */
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  
+  /*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+  body {
+    line-height: 0.9;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  /*
+    5. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  /*
+    6. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  /*
+    7. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  
+  /*
+    8. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+
+/* =========== Styling the project =============== */
+
+:root {
+    --purple-100: hsl(254, 88%, 90%);
+    --purple-500: hsl(256, 67%, 59%);
+    
+    --yellow-100: hsl(31, 66%, 93%);
+    --yellow-500: hsl(39, 100%, 71%);
+    
+    --white: hsl(0, 0%, 100%);
+    --black: hsl(0, 0%, 7%);
+}  
+
+body{
+    font-family: "DM Sans", sans-serif;
+    font-size: 18px;
+    letter-spacing: -1px;
+
+    background-color: hsl(240, 20%, 95%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+main{
+    width: 90%;
+    max-width: 450px;
+    /* border: 20px red solid; */
+
+    /* display: flex; */
+    display: grid;
+    gap: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin: 3rem auto;
+}
+
+
+/* ====================================================
+====================================================
+            Everything related to BOX-1
+====================================================
+==================================================== */
+
+.box-1-purple{
+    background-color: var(--purple-500);
+    color: var(--white);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 2rem;
+    
+    text-align: center;
+
+    border-radius: .7rem;
+}
+
+.box-1-header{
+    font-size: 3rem;
+    font-weight: 500;
+
+    /* border: 1px solid red; */
+    padding-bottom: 2rem;
+}
+
+.yellow-digit{
+    color: var(--yellow-500);
+}
+
+.italic-txt{
+    font-style: italic;
+}
+
+.box-1-img{
+    width: 65%;
+    padding-bottom: .5rem;
+}
+
+.box-1-txt{
+    letter-spacing: normal;
+}
+
+/* ====================================================
+====================================================
+            Everything related to BOX-2
+====================================================
+==================================================== */
+
+.box-2-white{
+    background-color: var(--white);
+
+    padding: 1rem;
+
+    border-radius: .7rem;
+}
+
+.box-2-img{
+    padding-bottom: 1rem;
+}
+
+.box-2-txt{
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+/* ====================================================
+====================================================
+            Everything related to BOX-3
+====================================================
+==================================================== */
+
+.box-3-yellow{
+    background-color: var(--yellow-500);
+
+    padding: 1rem 1rem 0 1rem;
+
+    border-radius: .7rem;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.box-3-txt{
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+.box-3-img{
+    width: 65%;
+
+    position: relative;
+    bottom: -18px;
+}
+
+/* ====================================================
+====================================================
+            Everything related to BOX-4
+====================================================
+==================================================== */
+
+.box-4-light-purple{
+    background-color: var(--purple-100);
+
+    padding: 2rem 1rem;
+
+    text-align: center;
+
+    border-radius: .7rem;
+}
+
+.box-4-header{
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+.box-4-img{
+    width: 100%;
+
+    padding: 1.5rem 0rem;
+}
+
+.box-4-txt{
+    letter-spacing: normal;
+    line-height: 1.2;
+}
+
+/* ====================================================
+====================================================
+            Everything related to BOX-5
+====================================================
+==================================================== */
+
+.box-5-purple{
+    background-color: var(--purple-500);
+
+    text-align: center;
+
+    border-radius: .7rem;
+
+    padding: 1.5rem 3.5rem;
+}
+
+.box-5-img{
+    padding-bottom: 2.5rem;
+}
+
+.box-5-txt{
+    color: var(--white);
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+/* ====================================================
+====================================================
+            Everything related to BOX-6
+====================================================
+==================================================== */
+
+.box-6-white{
+    background-color: var(--white);
+
+    padding: 1.5rem;
+
+    border-radius: .7rem;
+}
+
+.box-6-header{
+    font-size: 3rem;
+    font-weight: 500;
+    padding-bottom: 1.5rem;
+}
+
+.box-6-txt{
+    letter-spacing: normal;
+    padding-bottom: 1.5rem;
+}
+
+.box-6-img{
+    width: 60%;
+}
+
+/* ====================================================
+====================================================
+            Everything related to BOX-7
+====================================================
+==================================================== */
+
+.box-7-light-yellow{
+    background-color: var(--yellow-100);
+
+    padding: 2rem 1.5rem;
+
+    border-radius: .7rem;
+}
+
+.box-7-txt{
+    font-size: 2rem;
+    font-weight: 500;
+
+    padding-bottom: 1.5rem;
+}
+
+.purple-italic-txt{
+    color: var(--purple-500);
+    font-style: italic;
+}
+
+.box-7-img{
+    width: 70%;
+}
+
+/* ====================================================
+====================================================
+            Everything related to BOX-8
+====================================================
+==================================================== */
+
+.box-8-yellow{
+    background-color: var(--yellow-500);
+
+    padding: 1.5rem;
+
+    border-radius: .7rem;
+}
+
+.box-8-txt{
+    font-size: 2rem;
+    font-weight: 500;
+
+    padding-bottom: 1.5rem;
+}
+
+.box-8-img{
+    width: 80%;
+}
+
+/* ====================================================
+====================================================
+====================================================
+==================================================== 
+                    MEDIA QUERIES                  */
+
+
+@media screen and (min-width: 1150px) {
+    main{
+        max-width: 100%;
+        width: 80%;
+        padding: 2rem 0;
+        display: grid;
+        align-items: stretch;
+        gap: 2rem;
+
+        grid-template-columns: repeat(4, 1fr);
+
+        /* grid-template-rows: .5fr 5rem 5rem 5rem .5fr; */
+    }
+
+/* ====================================================
+====================================================
+            Everything related to BOX-1
+====================================================
+==================================================== */
+
+    .box-1-purple{
+        grid-column: 2 / 4;
+
+        align-self: flex-start;
+
+        padding: 3.5rem;
+    }
+
+    .box-1-header{
+        font-size: 4rem;
+        padding-bottom: 2rem;
+
+        width: 100%;
+    }
+
+    .box-1-img{
+        width: 45%;
+    }
+
+
+
+/* ====================================================
+====================================================
+            Everything related to BOX-2
+====================================================
+==================================================== */
+
+    .box-2-white{
+        grid-column: 2 / 3;
+        grid-row: 2 / 5;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        position: relative;
+        overflow: hidden;
+    }
+
+    .box-2-txt{
+        font-size: 2rem;
+        width: 90%;
+    }
+
+    .box-2-img{
+        min-width: 335px;
+    }
+
+/* ====================================================
+====================================================
+            Everything related to BOX-3
+====================================================
+==================================================== */
+
+    .box-3-yellow{
+        grid-column: 3 / 4;
+        grid-row: 2 / 5;
+
+        position: relative;
+        overflow: hidden;
+    }
+
+    .box-3-txt{
+        font-size: 2rem;
+        width: 90%;
+    }
+
+    .box-3-img{
+        width: 100%;
+        bottom: -70px;
+    }
+
+
+
+ /* ====================================================
+====================================================
+            Everything related to BOX-4
+====================================================
+==================================================== */
+    .box-4-light-purple{
+        grid-column: 4 / 5;
+        grid-row: 1 / 5;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        
+        text-align: center;
+
+        position: relative;
+        overflow: hidden;
+    }
+
+    .box-4-header{
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .box-4-img{
+        min-width: 350px;
+
+        position: relative;
+        right: -85px;
+    }
+
+    .box-4-txt{
+            text-align: start;
+            padding-left: 1.5rem;
+            width: 95%;
+    }
+
+
+ /* ====================================================
+====================================================
+            Everything related to BOX-5
+====================================================
+==================================================== */
+    .box-5-purple{
+        grid-column: 3 / 5;
+        grid-row: 5;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        padding: 1rem;
+    }
+
+    .box-5-img{
+        width: 40%;
+        padding: 0;
+    }
+
+    .box-5-txt{
+        font-size: 2.5rem;
+        width: 60%;
+    }
+
+ /* ====================================================
+====================================================
+            Everything related to BOX-6
+====================================================
+==================================================== */
+
+    .box-6-white{
+        grid-column: 2 / 3;
+        grid-row: 5;
+    }
+
+    .box-6-header{
+        font-size: 4rem;
+    }
+
+    .box-6-img{
+        width: 80%;
+    }
+
+/* ====================================================
+====================================================
+            Everything related to BOX-7
+====================================================
+==================================================== */
+
+    .box-7-light-yellow{
+        grid-column: 1 / 2;
+        grid-row: 1 / 3;
+
+        padding: 5rem 2rem;
+    }
+
+    .box-7-txt{
+        font-size: 2.5rem;
+    }
+
+    .box-7-img{
+        width: 90%;
+    }
+
+
+
+ /* ====================================================
+====================================================
+            Everything related to BOX-8
+====================================================
+==================================================== */   
+
+    .box-8-yellow{
+        grid-column: 1 / 2;
+        grid-row: 3 / 6;   
+
+        padding: 2rem;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .box-8-txt{
+        font-size: 2.5rem;
+        width: 90%;
+    }
+
+    .box-8-img{
+        /* margin: 0 auto; */
+        min-width: 140%;
+        padding: 0rem 1.3rem;
+        align-self: center;
+    }
+}
